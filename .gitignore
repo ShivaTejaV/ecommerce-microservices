@@ -1,0 +1,36 @@
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.Python
+**/env/
+**/.venv/
+**/venv/
+*.sqlite3
+
+# Django
+*.log
+*.pot
+*.pyc
+*.db
+*.pyo
+*.swp
+
+# IDEs
+**/.idea/
+**/.vscode/
+
+# Environment files
+*.env
+.env.*
+
+# Node (Angular)
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Git
+*.orig
