@@ -12,6 +12,7 @@ class TimeStampedModel(models.Model):
 
 class Category(TimeStampedModel):
     name = models.CharField(max_length=100, unique=True)
+    description = models.TextField(blank=True)
 
     def __str__(self):
         return self.name
@@ -33,3 +34,4 @@ class ProductImage(TimeStampedModel):
 
     def __str__(self):
         return f"Image for {self.product.name}"
+

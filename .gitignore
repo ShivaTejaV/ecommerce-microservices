@@ -34,3 +34,9 @@ Thumbs.db
 
 # Git
 *.orig
+
+
+#secrets
+
+**/secret.py
+**/secrets.py
