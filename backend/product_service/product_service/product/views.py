@@ -5,9 +5,10 @@ from django.shortcuts import render
 from rest_framework.generics import ListAPIView, RetrieveAPIView
 from .models import Product,Category
 from .serializers import ProductSerializer,CategorySerializer
-
+# from .pagination import SmallPagePagination,MediumPagePagination,LargePagePagination
 class ProductListView(ListAPIView):
     serializer_class = ProductSerializer
+    # pagination_class = SmallPagePagination
 
     def get_queryset(self):
         products = Product.objects.all().select_related('category')
